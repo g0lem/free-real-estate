@@ -10,11 +10,6 @@ var apartmentsSchema = new mongoose.Schema({
 		Surface: Number,
 		Price: Number
 
-}]
-
-
-
-
 },{collection:"apartments"});
 
 mongoose.model('Apartment', apartmentsSchema);

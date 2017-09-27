@@ -15,9 +15,9 @@ var https = require('https');
 mongoose.connect('mongodb://localhost/project50');
 //mongoose.connect('mongodb://g0lem:SF4phakPnXGunDSnhnWLxzWy@ds111798.mlab.com:11798/taiga-db');
 require("./models/user");
-require("./models/post");
+require("./models/apartment");
 
-var Post = mongoose.model('Post');
+var Apartment = mongoose.model('Apartment');
 var User = mongoose.model('User');
 //***Database Connection***
 
@@ -65,10 +65,6 @@ routes(app, auth, __dirname);
 var rest = require("./estate_modules/rest");
 rest(app, auth, mongoose);
 
-
-//***Taiga Modules***
-var upload = require("./estate_modules/upload");
-upload(app, auth, mongoose, __dirname);
 
 
 //***App Status Configuration***

@@ -4,7 +4,7 @@ module.exports = function(app, auth, mongoose){
 
 
   var User    =  mongoose.model('User');
-  var Post =  mongoose.model('Apartment');
+  var Post = mongoose.model('Apartment');
 
 
 
