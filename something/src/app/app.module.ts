@@ -10,7 +10,7 @@ import { PostComponent } from './post/post.component';
 
 const appRoutes: Routes = [
   { path: '*', component: AppComponent },
-  { path: 'post',      component: PostComponent }
+  { path: ':id',      component: PostComponent }
 ];
 
 
