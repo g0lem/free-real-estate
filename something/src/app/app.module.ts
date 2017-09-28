@@ -7,17 +7,24 @@ import { AppComponent } from './app.component';
 
 import { RouterModule, Routes } from '@angular/router';
 import { PostComponent } from './post/post.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const appRoutes: Routes = [
-  { path: '*', component: AppComponent },
-  { path: ':id',      component: PostComponent }
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'post/:id',      component: PostComponent },
+  { path: '',
+    redirectTo: 'dashboard',
+    pathMatch: 'full'
+  },
+  { path: '**', component: AppComponent }
 ];
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostComponent
+    PostComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
