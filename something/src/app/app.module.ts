@@ -6,18 +6,27 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
 import { RouterModule, Routes } from '@angular/router';
+import { PostComponent } from './post/post.component';
 
-
+const appRoutes: Routes = [
+  { path: '*', component: AppComponent },
+  { path: 'post',      component: PostComponent }
+];
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true } // <-- debugging purposes only
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
