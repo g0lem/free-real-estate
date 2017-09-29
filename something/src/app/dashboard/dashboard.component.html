@@ -1,13 +1,23 @@
-<a routerLink="../add" routerLinkActive="active">ADD</a>
 
+<div class="center-block">
 
+	  <a routerLink="../add" routerLinkActive="active" class="btn btn-info center-block" style="max-width: 20%">
+	  	Adauga Apartament
+	  </a>	
+
+</div>
+
+<br>
 
 <table class="table">
     <thead>
       <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Email</th>
+        <th>Numar Camere</th>
+        <th>Numar Bai</th>
+        <th>Adresa</th>
+        <th>Suprafata</th>
+        <th>Pret</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -15,8 +25,17 @@
 	
 		<tr *ngFor="let item of items; let i = index" [attr.data-index]="i" routerLink="{{i}}" routerLinkActive="active" class="divHover"> 
 			<td> {{item.name}} </td> 
-			<td><a routerLink="{{i}}" routerLinkActive="active">Crisis Center</a> </td>
+			<td> {{item.name}} </td> 
+			<td> {{item.name}} </td> 
+			<td> {{item.name}} </td> 
+			<td> {{item.name}} </td> 
+			<td><a routerLink="{{i}}" routerLinkActive="active">Edit</a> </td>
+
 		</tr>
 	
     </tbody>
   </table>
+
+
+
+
