@@ -14,12 +14,13 @@ export class AppComponent {
   constructor(){
 
   	this.items = JSON.parse(window.localStorage.getItem('items'));
+    console.log(this.items);
 
   }
 
 
   pushItem(){
-
+    this.items = JSON.parse(window.localStorage.getItem('items'));
   	this.items.push(this.new_item);
   	this.new_item = {};
   	window.localStorage.setItem('items', JSON.stringify(this.items));
