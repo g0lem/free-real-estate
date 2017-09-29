@@ -11,7 +11,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'post/:id',      component: PostComponent },
+  { path: 'dashboard/:id',      component: PostComponent },
   { path: '',
     redirectTo: 'dashboard',
     pathMatch: 'full'

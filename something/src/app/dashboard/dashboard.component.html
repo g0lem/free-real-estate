@@ -9,9 +9,12 @@
 </div>
 
 
-<div *ngFor="let item of items">
+<div *ngFor="let item of items; let i = index" [attr.data-index]="i">
 	
-	{{item.name}}
-	<a routerLink="{{item.name}}" routerLinkActive="active">Crisis Center</a>
+	
+	<table>
+		<tr> {{item.name}} <a routerLink="{{i}}" routerLinkActive="active">Crisis Center</a> </tr>
+	</table>
+	
 
 </div>
