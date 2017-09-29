@@ -1,11 +1,22 @@
 <a routerLink="../add" routerLinkActive="active">ADD</a>
 
-<div *ngFor="let item of items; let i = index" [attr.data-index]="i">
-	
-	
-	<table>
-		<tr> {{item.name}} <a routerLink="{{i}}" routerLinkActive="active">Crisis Center</a> </tr>
-	</table>
-	
 
-</div>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+				
+	
+		<tr *ngFor="let item of items; let i = index" [attr.data-index]="i" routerLink="{{i}}" routerLinkActive="active" class="divHover"> 
+			<td> {{item.name}} </td> 
+			<td><a routerLink="{{i}}" routerLinkActive="active">Crisis Center</a> </td>
+		</tr>
+	
+    </tbody>
+  </table>
