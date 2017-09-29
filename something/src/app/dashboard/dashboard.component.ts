@@ -18,14 +18,6 @@ export class DashboardComponent implements OnInit {
   }
 
 
-  pushItem(){
-
-  	this.items.push(this.new_item);
-  	this.new_item = {};
-  	window.localStorage.setItem('items', JSON.stringify(this.items));
-  	console.log(window.localStorage.getItem('items'));
-  	
-  }
   ngOnInit() {
   }
 
