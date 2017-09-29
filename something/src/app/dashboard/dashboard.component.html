@@ -1,4 +1,5 @@
 
+
 <div class="center-block">
 
 	  <a routerLink="../add" routerLinkActive="active" class="btn btn-info center-block" style="max-width: 20%">
@@ -24,17 +25,18 @@
 				
 	
 		<tr *ngFor="let item of items; let i = index" [attr.data-index]="i" routerLink="{{i}}" routerLinkActive="active" class="divHover"> 
-			<td> {{item.name}} </td> 
-			<td> {{item.name}} </td> 
-			<td> {{item.name}} </td> 
-			<td> {{item.name}} </td> 
-			<td> {{item.name}} </td> 
+			<td> {{item.rooms}} </td> 
+			<td> {{item.baths}} </td> 
+			<td> {{item.address}} </td> 
+			<td> {{item.area}} </td> 
+			<td> {{item.price}} </td> 
 			<td><a routerLink="../edit/{{i}}" routerLinkActive="active">Edit</a> </td>
 
 		</tr>
 	
     </tbody>
   </table>
+
 
 
 
