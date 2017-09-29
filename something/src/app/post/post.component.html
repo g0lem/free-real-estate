@@ -1,7 +1,37 @@
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<button class="btn btn-info" routerLink="/dashboard">Back</button>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div style="background-color: #CB5A5E">
+	<div class="center-block banner">
+	      <div class="banner-header" align="center">Real Estate</div>
 
-<div>
+	         <div class="banner-text" align="center">
+	         	Apartamente de calitate!
+	         </div>
+
+
+	<br>
+
+		<div class="center-block">
+
+			  <a routerLink="/" routerLinkActive="active" class="center-block btn btn-danger btn-outline btn-lg" style="max-width: 30%">Descopera Apartamente</a>	
+
+		</div>
+
+	</div>
+</div>
+
+
+<div style="width: 25%; float: right; margin-right: 10%">
+<img src="https://cdn.jamesedition.com/media/W1siZiIsImxpc3RpbmdfaW1hZ2VzLzIwMTcvMDkvMjQvMDYvMDYvMjgvZTZiYjIyY2EtZjNkZi00NjA4LTk0ZTgtNDZmOTYzMDJkMjA0L3g3MzNjYXdzbmh2ejQzdGUyNzlxYjA3eDcyaSJdLFsicCIsInRodW1iIiwiMjAwMHgiXSxbInAiLCJ3YXRlcm1hcmsiXSxbInAiLCJlbmNvZGUiLCJqcGciLCItc3RyaXAgLXF1YWxpdHkgODAgLWludGVybGFjZSBQbGFuZSJdXQ/colonial-revival.jpg?sha=64aec993e3e92e0e" style="max-width: 100%; margin-top: 30%">
+</div>
+
+
+
+<div style="margin-left: 10%; margin-top: 10%">
 	<h1>Adresa: {{item.address}}</h1>
 
 	<ul>
@@ -10,6 +40,7 @@
 		<li>Numar bai: {{item.area}}</li>
 	</ul>
 
-	<h3>Price: {{item.price}}</h3>
-
+	<h3>Pret: {{item.price}}</h3>
 </div>
+
+

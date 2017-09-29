@@ -1,15 +1,27 @@
 <div>
 
-<h1>
-  {{title}}
-</h1>
+	<div style="max-width: 50%; margin-left: 25%">
+		<h1 align="center">
+		  Adauga Apartament
+		</h1>
+		<br>
+		<div class="form-group">
+			Numar Camere:
+			<input class="form-control" type="text" name="" placeholder="Numar Camere" [(ngModel)]="new_item.rooms"><br>
+			Numar Bai:
+			<input class="form-control" type="text" name="" placeholder="Numar Bai" [(ngModel)]="new_item.baths"><br>
+			Adresa:
+			<input class="form-control" type="text" name="" placeholder="Adresa" [(ngModel)]="new_item.address"><br>
+			Suprafata:
+			<input class="form-control" type="text" name="" placeholder="Suprafata" [(ngModel)]="new_item.area"><br>
+			Pret:
+			<input class="form-control" type="text" name="" placeholder="Pret" [(ngModel)]="new_item.price">
 
-	<input type="text" name="" placeholder="Numar Camere" [(ngModel)]="new_item.rooms">
-	<input type="text" name="" placeholder="Numar Bai" [(ngModel)]="new_item.baths">
-	<input type="text" name="" placeholder="Adresa" [(ngModel)]="new_item.address">
-	<input type="text" name="" placeholder="Suprafata" [(ngModel)]="new_item.area">
-	<input type="text" name="" placeholder="Pret" [(ngModel)]="new_item.price">
-	<button (click)="pushItem()" routerLink="/dashboard">Submit</button>
+		</div>
+		<button (click)="pushItem()" routerLink="/dashboard" class="btn btn-success" style="float: right">Submit</button>
+		<button routerLink="/dashboard" class="btn btn-danger" style="float: left">Cancel</button>
+	</div>
+	
 
 
 </div>

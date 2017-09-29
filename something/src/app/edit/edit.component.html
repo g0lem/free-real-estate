@@ -1,16 +1,21 @@
 
-<div style="max-width: 50%">
+<div style="max-width: 50%; margin-left: 25%">
 
 		<div class="form-group">
-			<input class="form-control" type="text" name="" placeholder="Numar Camere" [(ngModel)]="new_item.rooms">
-
-			<input class="form-control" type="text" name="" placeholder="Numar Bai" [(ngModel)]="new_item.baths">
-			<input class="form-control" type="text" name="" placeholder="Adresa" [(ngModel)]="new_item.address">
-			<input class="form-control" type="text" name="" placeholder="Suprafata" [(ngModel)]="new_item.area">
+			Numar Camere:
+			<input class="form-control" type="text" name="" placeholder="Numar Camere" [(ngModel)]="new_item.rooms"><br>
+			Numar Bai:
+			<input class="form-control" type="text" name="" placeholder="Numar Bai" [(ngModel)]="new_item.baths"><br>
+			Adresa:
+			<input class="form-control" type="text" name="" placeholder="Adresa" [(ngModel)]="new_item.address"><br>
+			Suprafata:
+			<input class="form-control" type="text" name="" placeholder="Suprafata" [(ngModel)]="new_item.area"><br>
+			Pret:
 			<input class="form-control" type="text" name="" placeholder="Pret" [(ngModel)]="new_item.price">
+
 
 		</div>
 		<button (click)="edit()" routerLink="/dashboard" class="btn btn-success" style="float: right">Edit</button>
-
+		<button routerLink="/dashboard" class="btn btn-danger" style="float: left">Cancel</button>
 
 </div>
