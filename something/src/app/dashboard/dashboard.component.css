@@ -23,3 +23,36 @@
 	background-color: #ecf0f1;
 
 }
+
+
+.banner {
+    max-width:1050px;
+    max-height: 300px;
+	text-align: center;
+    margin: auto;
+    color: white;
+    padding-top:10px;
+    padding-bottom:25px;
+}
+
+.banner-text{
+  font-family:lato;
+  font-weight:300;
+  font-size:17px;
+}
+
+.banner-header{
+  font-family:lato;
+  font-size: 3.5em;
+
+}
+
+.btn-danger.btn-outline{
+  margin-top:10px;
+  background-color: white;
+  color: #CB5A5E;
+  padding-left:70px;
+  padding-right:70px;
+  font-family:lato;
+  font-weight:300;
+}

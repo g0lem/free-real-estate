@@ -9,16 +9,20 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 })
 export class PostComponent implements OnInit {
 
-  item;
+  items = [];
+  id;
+  item = {};
 
-  constructor(private activatedRoute: ActivatedRoute) { 
+  constructor(private route: ActivatedRoute) { 
 
-  	this.activatedRoute.params.subscribe(function(params: Params){
-        let id = params['id'];
-        console.log(id);
-        this.item = JSON.parse(window.localStorage.getItem('items'))[id];
-        console.log(this.item);
-    });
+  	this.items = JSON.parse(window.localStorage.getItem('items'));
+
+
+
+    this.id = this.route.snapshot.params['id'];
+
+    this.item = this.items[this.id];
+
 
 
   }
