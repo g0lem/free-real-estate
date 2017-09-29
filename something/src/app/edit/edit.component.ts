@@ -21,6 +21,8 @@ export class EditComponent implements OnInit {
 
     this.id = this.route.snapshot.params['id'];
 
+    this.new_item = this.items[this.id];
+
 
 
   }
